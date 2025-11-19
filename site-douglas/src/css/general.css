@@ -540,7 +540,7 @@ html {
   border: var(--border-container-item);
 }
 
-.content-home-brand > img{ width: min(150px, 30vw); }
+.content-home-brand > img{ width: min(300px, 30vw); } /* Alterado de 150px para 300px */
 .content-home-brand > .title-01{ width: auto; margin-bottom: 0; text-align: center; }
 .container-section-01 .subtitle-01{ text-align: center; }
 .container-section-01 .container-buttons{ justify-content: center; }

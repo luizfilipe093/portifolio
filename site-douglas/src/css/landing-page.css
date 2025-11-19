@@ -1,0 +1,358 @@
+/* Variáveis para cores e fontes, se necessário, ou usar as de general.css */
+:root {
+    --lp-primary-color: #2c3e50; /* Azul escuro */
+    --lp-secondary-color: #FFCA57; /* Dourado */
+    --lp-text-light: #ecf0f1;
+    --lp-text-dark: #34495e;
+    --lp-font-family: 'Roboto Slab', serif;
+}
+
+body {
+    font-family: var(--lp-font-family);
+    margin: 0;
+    background-color: #f8f8f8; /* Fundo claro para a landing page */
+    color: var(--lp-text-dark);
+}
+
+/* Base Styles (pode se beneficiar de general.css para tipografia base) */
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+    color: var(--lp-primary-color);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Header */
+.lp-header {
+    background-color: var(--lp-primary-color);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lp-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.lp-logo img {
+    height: 50px; /* Ajuste o tamanho do logo */
+}
+
+/* Buttons */
+.lp-button-primary,
+.lp-button-secondary,
+.lp-button-submit {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.lp-button-primary {
+    background-color: var(--lp-secondary-color);
+    color: var(--lp-primary-color);
+    font-size: 1.1em;
+}
+
+.lp-button-primary:hover {
+    background-color: #e0ac40; /* Um tom ligeiramente mais escuro */
+    transform: translateY(-2px);
+}
+
+.lp-button-secondary {
+    background-color: transparent;
+    color: var(--lp-secondary-color);
+    border: 2px solid var(--lp-secondary-color);
+    font-size: 0.95em;
+}
+
+.lp-button-secondary:hover {
+    background-color: var(--lp-secondary-color);
+    color: var(--lp-primary-color);
+}
+
+.lp-button-submit {
+    background-color: var(--lp-secondary-color);
+    color: var(--lp-primary-color);
+    font-size: 1.1em;
+    width: 100%; /* Para o formulário */
+    margin-top: 20px;
+}
+
+.lp-button-submit:hover {
+    background-color: #e0ac40;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.lp-hero-section {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../img/background/bg-hero-lp.jpg') center/cover no-repeat;
+    color: var(--lp-text-light);
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Ajuste a altura conforme necessário */
+}
+
+/* IMAGEM DE FUNDO PARA O HERO SECTION (SALVE COMO bg-hero-lp.jpg em assets/img/background/) */
+/* http://googleusercontent.com/image_generation_content/11
+
+ */
+
+.lp-hero-content {
+    max-width: 800px;
+}
+
+.lp-hero-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: var(--lp-text-light);
+}
+
+.lp-hero-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Benefits Section */
+.lp-benefits-section {
+    background-color: var(--lp-text-light); /* Um cinza muito claro */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.lp-benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.lp-benefit-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.lp-benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.lp-benefit-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    filter: brightness(0.8) sepia(1) hue-rotate(15deg) saturate(3); /* Colore o ícone de dourado */
+}
+
+.lp-benefit-card h3 {
+    font-size: 1.5em;
+    color: var(--lp-primary-color);
+    margin-bottom: 15px;
+}
+
+.lp-benefit-card p {
+    color: var(--lp-text-dark);
+    font-size: 1em;
+}
+
+/* Contact Form Section */
+.lp-contact-form-section {
+    background-color: var(--lp-primary-color);
+    padding: 80px 20px;
+    color: var(--lp-text-light);
+}
+
+.lp-contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .lp-contact-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .lp-form-info {
+        text-align: left;
+    }
+}
+
+.lp-form-info {
+    text-align: center;
+}
+
+.lp-form-title {
+    font-size: 2.5em;
+    color: var(--lp-secondary-color);
+    margin-bottom: 20px;
+}
+
+.lp-form-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.lp-contact-details p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: var(--lp-text-light);
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .lp-contact-details p {
+        justify-content: flex-start;
+    }
+}
+
+
+.lp-contact-details img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(1.2) sepia(1) hue-rotate(15deg) saturate(3); /* Colore o ícone de dourado */
+}
+
+.lp-form-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    color: var(--lp-text-dark); /* Cor do texto dentro do formulário */
+}
+
+.lp-form-group {
+    margin-bottom: 20px;
+}
+
+.lp-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--lp-primary-color);
+}
+
+.lp-form-group input[type="text"],
+.lp-form-group input[type="email"],
+.lp-form-group input[type="tel"],
+.lp-form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: var(--lp-text-dark);
+}
+
+.lp-form-group textarea {
+    resize: vertical;
+}
+
+.lp-form-group input:focus,
+.lp-form-group textarea:focus {
+    border-color: var(--lp-secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 202, 87, 0.5);
+}
+
+
+/* Footer */
+.lp-footer {
+    background-color: #1a1a1a;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.lp-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lp-footer-dev a {
+    color: var(--lp-secondary-color);
+    text-decoration: none;
+}
+
+.lp-footer-dev a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .lp-hero-title {
+        font-size: 2.2em;
+    }
+
+    .lp-hero-subtitle {
+        font-size: 1em;
+    }
+
+    .lp-button-primary,
+    .lp-button-secondary,
+    .lp-button-submit {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .lp-benefits-section {
+        padding: 50px 20px;
+    }
+
+    .lp-contact-form-section {
+        padding: 50px 20px;
+    }
+
+    .lp-form-title {
+        font-size: 2em;
+    }
+
+    .lp-form-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lp-header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lp-hero-title {
+        font-size: 1.8em;
+    }
+
+    .lp-hero-section {
+        padding: 60px 20px;
+    }
+}

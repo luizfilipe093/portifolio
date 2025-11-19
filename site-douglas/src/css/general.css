@@ -1322,11 +1322,3 @@ html {
     .container-footer > .container-contact{ max-width: 350px; }
 }
 
-/* Removido copy-crisp, parece ser um elemento duplicado de copyright */
-/* .copy-crisp{
-    display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #161616;
-}
-
-.copy-crisp > p > a{
-    margin: 0; font-size: 12px; color: #FFCA57; text-transform: uppercase; text-decoration: none;
-} */

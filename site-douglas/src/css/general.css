@@ -985,7 +985,11 @@ html {
 }
 
 /* SECTION 08 | MAPS & CONTACT */
-.section-08{ padding: 5rem 0; }
+.section-08{
+    padding: 5rem 0;
+    background-color: var(--primary-color-2); /* Adicionado um fundo para a seção de contato */
+    color: var(--primary-color-3); /* Cor do texto principal */
+}
 
 .container-section-08{
     width: 95%;
@@ -993,143 +997,336 @@ html {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    border: var(--border-container); /* Borda para debug, remova em produção */
 }
 
-.container-section-08 > .container-localization{ width: 100%; height: 250px; order: 2; }
-.container-section-08 > .container-localization > iframe{ width: 100%; height: 100%; border: none; } /* Adicionado border: none */
+.container-section-08 > .container-localization{
+    width: 100%;
+    height: 250px;
+    order: 2;
+    border: var(--border-container-item); /* Borda para debug, remova em produção */
+}
+.container-section-08 > .container-localization > iframe{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Adicionado uma borda sutil ao iframe */
+    border-radius: 5px; /* Bordas arredondadas para o mapa */
+}
 
 .container-section-08 > .container-info{
     width: 95%;
-    max-width: var(--max-width-container-2); /* Limitado a max-width-container-2 */
+    max-width: var(--max-width-container-2);
     margin: 0 auto 65px;
+    padding: 20px; /* Adicionado padding para o conteúdo de informação */
+    background-color: var(--primary-color-1); /* Fundo para o container de info */
+    border-radius: 8px; /* Bordas arredondadas para o container de info */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
     display: flex;
     flex-direction: column;
     justify-content: center;
     order: 1;
+    border: var(--border-container-item); /* Borda para debug, remova em produção */
+}
+
+.container-section-08 > .container-info > .content-text{
+    margin-bottom: 30px; /* Espaçamento abaixo do texto principal */
+    text-align: center; /* Centralizar o texto */
+}
+
+.container-section-08 > .container-info > .content-text > .description-01{
+    color: #FFCA57; /* Cor destacada para a descrição */
+}
+
+.container-section-08 > .container-info > .content-text > .title-02{
+    margin-bottom: 15px;
+    color: var(--primary-color-3); /* Cor do título */
 }
 
 .container-section-08 > .container-info > .content-text > .subtitle-02{
-    max-width: 600px; margin: 0 auto; margin-bottom: 15px; text-align: justify;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center; /* Centralizado para melhor leitura */
+    color: rgba(240, 248, 255, 0.7); /* Cor mais clara para o subtítulo */
 }
 
-.container-section-08 > .container-info > .content-text > .container-buttons{ justify-content: center; margin-bottom: 15px; }
+/* Remover `.container-buttons` se não for utilizado aqui ou se for apenas para estilização de botões no HTML */
+.container-section-08 > .container-info > .content-text > .container-buttons{
+    justify-content: center;
+    margin-bottom: 15px;
+}
 
 .container-section-08 > .container-info > .item-contact{
-    width: 100%; max-width: 450px; margin: 0 auto; display: flex; align-items: center;
-    gap: 10px; margin-bottom: 10px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Aumentado o gap para melhor espaçamento entre ícone e texto */
+    margin-bottom: 15px; /* Aumentado o espaçamento entre itens de contato */
+    background-color: var(--primary-color-2); /* Fundo leve para cada item de contato */
+    padding: 10px 15px; /* Padding interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Borda sutil */
+    transition: all 0.3s ease; /* Transição para hover */
 }
 
-.container-section-08 > .container-info > .item-contact > p{ font-size: min(4vw, 14px); margin: 0; }
+.container-section-08 > .container-info > .item-contact:hover{
+    background-color: #ffca571a; /* Fundo mais claro no hover */
+    transform: translateX(5px); /* Efeito de deslize no hover */
+    border-color: #FFCA57; /* Borda destacada no hover */
+}
+
+.container-section-08 > .container-info > .item-contact > p{
+    font-size: min(4vw, 16px); /* Ajuste de font-size para ser mais responsivo */
+    margin: 0;
+    color: var(--primary-color-3); /* Cor do texto do contato */
+}
+
 .container-section-08 > .container-info > .item-contact > img{
-    width: 25px; /* Tamanho específico para ícones de contato. */
-    height: 25px; /* Adicionado height */
-    max-width: none; /* Remover max-width: 25px */
+    width: 30px !important; /* Tamanho específico para ícones de contato. */
+    height: 30px !important; /* Adicionado height */
+    max-width: 30px !important; /* Garante que não ultrapasse 30px */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+    filter: brightness(1.2); /* Deixa os ícones um pouco mais claros */
 }
 
 @media screen and (min-width: 992px){
-    .container-section-08{ flex-direction: row; align-items: center; width: var(--width-container-1); } /* Restaurado width: var(--width-container-1) */
-    .container-section-08 > .container-localization{ height: 500px; order: 1; }
-    .container-section-08 > .container-info{ padding: 15px; margin-bottom: 0; order: 2; }
+    .container-section-08{ flex-direction: row; align-items: stretch; width: var(--width-container-1); gap: 30px; } /* Adicionado gap e stretch para preencher altura */
+    .container-section-08 > .container-localization{ height: 500px; order: 1; flex: 1; } /* Flex para ocupar espaço */
+    .container-section-08 > .container-info{
+        padding: 30px;
+        margin-bottom: 0;
+        order: 2;
+        flex: 1; /* Flex para ocupar espaço */
+        justify-content: space-around; /* Distribui o conteúdo verticalmente */
+    }
+    .container-section-08 > .container-info > .content-text{ text-align: left; }
+    .container-section-08 > .container-info > .content-text > .subtitle-02{ text-align: left; margin: 0; }
+    .container-section-08 > .container-info > .item-contact{ max-width: none; margin: 0; } /* Remove max-width e margin para ocupar largura total */
 }
 
-/* 10. FOOTER -------------------------------------------*/
-.section-footer{ background-color: #1a1a1a; }
+/* SECTION 09 | FOOTER -------------------------------------------*/
+.section-09-footer{ /* Renomeada a classe para section-09-footer */
+    background-color: #1a1a1a;
+    padding: 5rem 0rem;
+    color: var(--primary-color-3);
+    border: var(--border-section); /* Borda para debug, remova em produção */
+}
 
 .container-footer{
-    width: var(--width-container-1); /* Restaurado width: var(--width-container-1) */
+    width: var(--width-container-1);
     margin: 0 auto;
     max-width: var(--max-width-container-1);
-    padding: 5rem 0rem;
-    gap: 30px; /* Aumentado o gap para melhor espaçamento */
+    gap: 40px; /* Aumentado o gap para melhor espaçamento entre as colunas */
     display: flex;
-    align-items: start; /* Alinhar itens ao topo para layout em colunas */
     flex-direction: column;
+    align-items: center; /* Centraliza no mobile */
+    text-align: center; /* Centraliza o texto no mobile */
+    border: var(--border-container); /* Borda para debug, remova em produção */
+}
+
+.container-footer > .container-brand,
+.container-footer > .container-navigation,
+.container-footer > .container-contact{
+    width: 95%; /* Garante que ocupem a largura no mobile */
+    max-width: 400px; /* Limite para não ficarem muito largos em telas médias */
+    margin: 0 auto;
+    border: var(--border-container-item); /* Borda para debug, remova em produção */
 }
 
 .container-footer > .container-brand{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    width: 95%;
-    max-width: 500px;
 }
 
-.content-brand-text{ display: flex; flex-direction: column; }
+.content-brand-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o logo e o parágrafo */
+}
+
 .content-brand-text > img{
-    width: 70px; /* Tamanho específico para o logo no footer */
+    width: 80px !important; /* Tamanho específico para o logo no footer. Aumentado um pouco */
     height: auto;
-    max-width: none; /* Remover max-width */
-    margin-bottom: 20px;
+    max-width: 80px !important; /* Garante que não ultrapasse */
+    margin-bottom: 25px; /* Aumentado o espaçamento */
 }
-.content-brand-text > p{ text-align: start; margin-bottom: 0; color: rgba(240, 248, 255, 0.6); } /* Adicionado cor para contraste */
+.content-brand-text > p{
+    text-align: center; /* Centralizado no mobile */
+    margin-bottom: 0;
+    color: rgba(240, 248, 255, 0.7); /* Cor um pouco mais clara para contraste */
+    line-height: 1.6; /* Melhorar legibilidade */
+}
 
-.content-brand-social{ display: flex; gap: 10px; margin-top: 65px; } /* Aumentado o gap */
+.content-brand-social{
+    display: flex;
+    gap: 15px; /* Aumentado o gap entre os ícones sociais */
+    margin-top: 40px; /* Ajuste do espaçamento acima */
+}
 
 .content-brand-social > a {
-    display: flex; align-items: center; text-decoration: none; justify-content: center;
-    background-color: #ffca5786; height: 50px; width: 50px; border-radius: 3px;
-    transition: .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffca5786;
+    height: 45px; /* Ajustado o tamanho do círculo social */
+    width: 45px; /* Ajustado o tamanho do círculo social */
+    border-radius: 50%; /* Torna o background circular */
+    transition: background-color .3s ease, transform .3s ease;
 }
 
-.content-brand-social > a:hover{ background-color: #ffca57; transform: translateY(-5px); } /* Ajustado translateY */
+.content-brand-social > a:hover{
+    background-color: #FFCA57;
+    transform: translateY(-3px) scale(1.05); /* Efeito de elevação e leve aumento no hover */
+}
 .content-brand-social > a > img{
-    width: 20px; /* Tamanho específico para ícones sociais no footer */
-    height: 20px; /* Adicionado height */
-    max-width: none; /* Remover max-width */
+    width: 22px !important; /* Tamanho específico para ícones sociais no footer */
+    height: 22px !important; /* Adicionado height */
+    max-width: 22px !important; /* Garante que não ultrapasse */
+    filter: invert(1); /* Inverte a cor para branco nos ícones, se forem pretos */
 }
 
-.container-footer > .container-navegation{
-    display: flex; flex-direction: column; gap: 12px;
-    width: 95%; margin: 0 auto; max-width: 500px;
+.container-footer > .container-navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os links de navegação */
 }
 
-.container-footer > .container-navegation > h3{ text-align: start; margin-bottom: 20px; color: var(--primary-color-3); } /* Adicionado cor */
-
-.container-footer > .container-navegation > a{
-    color: rgba(240, 248, 255, 0.415); text-decoration: none; transition: .4s ease; font-size: 16px;
+.container-footer > .container-navigation > h3{
+    text-align: center; /* Centralizado no mobile */
+    margin-bottom: 20px;
+    color: #FFCA57; /* Cor destacada para o título */
 }
 
-.container-footer > .container-navegation > a:hover{ color: #FFCA57; }
+.container-footer > .container-navigation > a{
+    color: rgba(240, 248, 255, 0.6);
+    text-decoration: none;
+    transition: color .3s ease, transform .3s ease;
+    font-size: 15px;
+    padding: 5px 0; /* Adicionado padding para área de clique */
+}
+
+.container-footer > .container-navigation > a:hover{
+    color: #FFCA57;
+    transform: translateX(5px); /* Efeito de deslize no hover */
+}
 
 .container-footer > .container-contact{
-    display: flex; flex-direction: column; gap: 10px; /* Aumentado o gap */
-    width: 95%; max-width: 400px; margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Aumentado o gap */
 }
 
-.container-footer > .container-contact > h3{ text-align: start; margin-bottom: 20px; color: var(--primary-color-3); } /* Adicionado cor */
-.container-footer > .container-contact > .item-contact{ display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
-.container-footer > .container-contact > .item-contact > img{
-    width: 20px; /* Tamanho específico para ícones de contato no footer */
-    height: 20px; /* Adicionado height */
-    max-width: none; /* Remover max-width */
+.container-footer > .container-contact > h3{
+    text-align: center; /* Centralizado no mobile */
+    margin-bottom: 20px;
+    color: #FFCA57; /* Cor destacada para o título */
 }
-.container-footer > .container-contact > .item-contact > p { color: rgba(240, 248, 255, 0.641); font-size: 14px; margin: 0; }
+.container-footer > .container-contact > .item-contact{
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Aumentado o gap */
+    margin-bottom: 8px; /* Ajustado o espaçamento entre itens */
+}
+.container-footer > .container-contact > .item-contact > img{
+    width: 25px !important; /* Tamanho específico para ícones de contato no footer */
+    height: 25px !important; /* Adicionado height */
+    max-width: 25px !important; /* Garante que não ultrapasse */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+    filter: brightness(1.2); /* Deixa os ícones um pouco mais claros */
+}
+.container-footer > .container-contact > .item-contact > p {
+    color: rgba(240, 248, 255, 0.7);
+    font-size: 15px;
+    margin: 0;
+    text-align: left; /* Garante que o texto se alinha à esquerda em desktop */
+}
 
 .container-footer-copy{
-    width: var(--width-container-1); /* Restaurado width: var(--width-container-1) */
-    margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, 0.062); padding: 2rem 0rem;
-    max-width: var(--max-width-container-1); /* Adicionado max-width */
-}
-
-.container-footer-copy > .container-brand > p { /* Ajustei o seletor aqui, parece que `.container-brand` é o pai */
-    width: 100%; /* Removido 95% para usar 100% dentro do container */
+    width: var(--width-container-1);
     margin: 0 auto;
-    color: rgba(240, 248, 255, 0.33);
-    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08); /* Borda mais visível */
+    padding: 2rem 0rem;
+    max-width: var(--max-width-container-1);
+    display: flex; /* Para centralizar facilmente o texto */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Espaçamento entre os parágrafos de copy */
+}
+
+.container-footer-copy > p {
+    color: rgba(240, 248, 255, 0.45); /* Cor mais clara para o texto de copyright */
+    font-size: 13px;
     text-align: center;
+    margin: 0; /* Remove margem padrão de parágrafos */
 }
 
+.container-footer-copy > p > a{
+    color: #FFCA57;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.container-footer-copy > p > a:hover{
+    color: #FFCA57;
+    text-decoration: underline;
+}
+
+
+/* Media query para telas maiores do rodapé */
 @media screen and (min-width: 768px){
-    .container-footer{ display: flex; flex-direction: row; align-items: start; gap: 40px; } /* Aumentado o gap */
-    .container-footer > .container-brand{ max-width: 350px; } /* Ajuste de max-width */
-    .container-footer > .container-navegation{ max-width: 200px; }
-    .container-footer > .container-contact{ max-width: 350px; } /* Ajuste de max-width */
+    .container-footer{
+        flex-direction: row;
+        align-items: start; /* Alinha itens ao topo para layout em colunas */
+        text-align: left; /* Alinha texto à esquerda para desktop */
+        justify-content: space-between; /* Distribui o espaço entre as colunas */
+        gap: 20px; /* Reduz o gap entre as colunas para mais espaço horizontal */
+    }
+
+    .container-footer > .container-brand,
+    .container-footer > .container-navigation,
+    .container-footer > .container-contact{
+        width: auto; /* Deixa a largura ser definida pelo conteúdo ou flex */
+        max-width: none; /* Remove a limitação de max-width */
+        margin: 0; /* Remove a margem automática */
+    }
+
+    .container-footer > .container-brand{
+        align-items: flex-start; /* Alinha os itens da marca à esquerda */
+        flex: 1; /* Permite que o container-brand ocupe mais espaço */
+    }
+    .content-brand-text{
+        align-items: flex-start; /* Alinha o logo e o parágrafo à esquerda */
+    }
+    .content-brand-text > p{ text-align: left; } /* Alinha o texto do parágrafo à esquerda */
+    .content-brand-social{ margin-top: 30px; } /* Ajuste de margem */
+
+
+    .container-footer > .container-navigation{ flex: 0.5; } /* Controle de largura relativo */
+    .container-footer > .container-navigation > h3{ text-align: left; }
+    .container-footer > .container-navigation > a{ text-align: left; }
+
+    .container-footer > .container-contact{ flex: 1; } /* Controle de largura relativo */
+    .container-footer > .container-contact > h3{ text-align: left; }
+    .container-footer > .container-contact > .item-contact{ margin-bottom: 10px; }
 }
 
-.copy-crisp{
-    display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #161616;
+@media screen and (min-width: 992px){
+    .container-footer{ gap: 50px; } /* Aumenta o gap para telas maiores */
+    .container-footer > .container-brand{ max-width: 350px; }
+    .container-footer > .container-navigation{ max-width: 200px; }
+    .container-footer > .container-contact{ max-width: 350px; }
+}
+
+/* Removido copy-crisp, parece ser um elemento duplicado de copyright */
+/* .copy-crisp{
+    display: flex; align-items: center; justify-content: center; padding: 1rem; background-color: #161616;
 }
 
 .copy-crisp > p > a{
-    margin: 0; font-size: 12px; color: #FFCA57; text-transform: uppercase; text-decoration: none;
-}
+    margin: 0; font-size: 12px; color: #FFCA57; text-transform: uppercase; text-decoration: none;
+} */

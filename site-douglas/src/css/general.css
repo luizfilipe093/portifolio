@@ -1,5 +1,4 @@
 /* IMPORT SECTIONS --------------------------------------*/
-
 @import "section-01.css";
 @import "section-02.css";
 @import "section-03.css";
@@ -11,7 +10,8 @@
 
 @import "navegation.css";
 @import "floating-button.css";
-@import "side-navegation.css";
+/* CORREÇÃO 1: Ajustado de 'navegation' para 'navigation' para bater com o nome do arquivo */
+@import "side-navigation.css"; 
 
 @import "footer.css";
 
@@ -19,19 +19,25 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('../../assets/font/inter/Inter-VariableFont_slnt\,wght.ttf'),
+  /* CORREÇÃO 2: Caminho ajustado para a pasta correta e sintaxe corrigida */
+  src: url('../../assets/font/Inter-VariableFont_slnt,wght.ttf') format('truetype');
 }
 
+/* ATENÇÃO: A fonte Roboto não estava na sua lista de arquivos. 
+   Para funcionar, você precisa baixar o arquivo ou usar o Google Fonts.
+   Deixei comentado para não gerar erro 404 no console.
+*/
+/*
 @font-face {
   font-family: 'Roboto';
-  src: url('../../assets/font/roboto/RobotoSlab-VariableFont_wght.ttf'),
+  src: url('../../assets/font/RobotoSlab-VariableFont_wght.ttf');
 }
+*/
 
 /* DEAFAULT GLOBAL --------------------------------------*/
 
 *{
-  font-family: 'Inter';
-
+  font-family: 'Inter', sans-serif; /* Adicionado sans-serif como fallback */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,9 +50,7 @@ html{
 /* VARIABLES ---------------------------------------------*/
 
 :root{
-
   /* CONTAINER VARIABLES ----------------------------------*/
-
   --width-container-1:            90%;
   --width-container-2:            100%;
 
@@ -56,28 +60,25 @@ html{
   --margin-bottom-content-text:   35px;
 
   /* BOOKMARKS -------------------------------------------*/
-
   --border-section:               none;
   --border-container:             none;
   --border-container-content:     none;
   --border-container-item:        none;
 
   /* STANDARD COLORS -------------------------------------*/
-
   --primary-color-1: #CD9C20;
   --primary-color-2: #191919;
   --primary-color-3: #fff;
 
   --secondary-color-1: #ffffffb3;
   --secondary-color-2: #191919d1;
-  --secondary-color-3: ;
+  --secondary-color-3: transparent; /* Corrigido valor vazio */
 }
 
 .container-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   width: var(--width-container-1);
 }
 
@@ -146,8 +147,7 @@ html{
   text-align: center;
   color: var(--primary-color-1);
 
-  font-family: 'Roboto+Slab', serif;
-  
+  font-family: 'Roboto Slab', 'Inter', serif; /* Ajustado nome da familia */
 }
 
 .title-02{
@@ -164,7 +164,7 @@ html{
   text-align: center;
   color: var(--primary-color-1);
 
-  font-family: 'Roboto+Slab', serif;
+  font-family: 'Roboto Slab', 'Inter', serif;
 }
 
 .title-03{
@@ -181,7 +181,7 @@ html{
   text-align: center;
   color: var(--primary-color-1);
 
-  font-family: 'Roboto+Slab', serif;
+  font-family: 'Roboto Slab', 'Inter', serif;
 }
 
 /* VARIABLES DE SUBTITLE --------------------------------*/

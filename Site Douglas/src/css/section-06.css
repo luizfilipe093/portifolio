@@ -1,0 +1,115 @@
+/* SECTION 06 | CONTAINER IMG ---------------------------*/
+
+.section-06{
+  background-color: #191919;
+  width: 100%;
+  padding: 5rem 0rem 0rem;
+
+  border: var(--border-section);
+}
+
+/* SECTION 06 | CONTAINER SECTION -----------------------*/
+
+.container-section-06{
+
+  width: var(--width-container-1);
+  max-width: var(--max-width-container-1);
+
+  display: flex;
+  flex-direction: column;
+
+  width: 95%;
+  margin: 0 auto;
+  gap: 20px;
+
+  padding: 5rem 0rem; 
+
+  border: var(--border-container);
+}
+
+/* SECTION 06 | CONTENT TEXT ----------------------------*/
+
+.container-section-06 > .container-text{
+  width: var(--width-container-1);
+  max-width: var(--max-width-container-2);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: var(--border-container-item);
+}
+
+.container-section-06 > .container-text > .subtitle-02{
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.container-section-06 > .container-text > .content-home-brand > img{
+  max-width: 200px;
+}
+
+.container-section-06 > .container-text > .content-home-brand > .title-01{
+  font-size: min(12vw, 34px);
+}
+
+
+/* SECTION 06 | CONTENT IMG -----------------------------*/
+
+.container-section-06 > .container-img{
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  order: 1;
+
+  border: var(--border-container-item);
+}
+
+.container-section-06 > .container-img > img{
+  width: 100%;
+  max-width: 700px;
+}
+
+/*-------------------------------------------------------*/
+
+@media screen and (min-width: 750px){
+  .container-section-06 > .container-text > .content-home-brand > img{
+    max-width: 130px;
+  }
+  
+  .container-section-06 > .container-text > .content-home-brand > .title-01{
+    font-size: min(12vw, 40px);
+  }
+}
+
+@media screen and (min-width: 992px){
+  .section-06{
+    padding: 0;
+  }
+
+  .container-section-06{
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .container-section-06 > .container-text{
+    padding: 0 15px;
+  }
+
+  .container-section-06 > .container-text > .description-02{
+    text-align: start;
+  }
+
+  .container-section-06 > .container-text > .title-02{
+    text-align: start;
+  }
+
+  .container-section-06 > .container-img{
+    order: 2;
+  }
+}

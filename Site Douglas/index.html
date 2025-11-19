@@ -1,386 +1,354 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DR Advogados e Associados</title>
-	<link href="assets/img/brand/brand-aba.png" rel="icon" type="image/x-icon" /><!-- META TAG COMPARTILHAMENTO --------------------------------------><meta name="description" content="A DR Advogados Associados oferece consultoria e assessoria jurídica especializada para empresas e conglomerados em âmbito nacional, proporcionando suporte legal essencial às necessidades do seu negócio."><meta name="keywords" content="DR Advogados, Advocacia, Associados, DR Adovogados Associados, Jurídico, Consultoria"><meta name="author" content="Denner Tarifa Ribeiro"><meta property="og:title" content="DR Advogados Associados"><meta property="og:description" content="A DR Advogados Associados oferece consultoria e assessoria jurídica especializada para empresas e conglomerados em âmbito nacional, proporcionando suporte legal essencial às necessidades do seu negócio."><meta property="og:image" content="assets/img/icons/DR1.svg"><meta property="og:url" content="https://advogadosdr.com.br/"><meta property="og:type" content="website"><meta name="twitter:title" content="DR Advogados Associados"><meta name="twitter:description" content="A DR Advogados Associados oferece consultoria e assessoria jurídica especializada para empresas e conglomerados em âmbito nacional, proporcionando suporte legal essencial às necessidades do seu negócio."><meta name="twitter:image" content="assets/img/icons/DR1.svg"><!-- GENERAL STYLIZATION -------------------------------------------->
-	<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
-	<link href="src/css/general.css" rel="stylesheet" /><!-- GENERAL SCRIPT -------------------------------------------------><script src="assets/bootstrap/js/bootstrap.js" defer></script><script src="src/js/function.js" defer></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>[NOME DO ESCRITÓRIO DO DOUGLAS]</title>
+    
+    <link href="assets/img/brand/favicon.png" rel="icon" type="image/x-icon" />
+
+    <meta name="description" content="Escritório de advocacia especializado em [ÁREAS DE ATUAÇÃO], oferecendo consultoria e assessoria jurídica.">
+    <meta name="keywords" content="Advocacia, Advogado, [CIDADE], Jurídico, Consultoria, [ÁREA 1], [ÁREA 2]">
+    <meta name="author" content="[NOME DO DOUGLAS OU DO DESENVOLVEDOR]">
+    
+    <meta property="og:title" content="[NOME DO ESCRITÓRIO DO DOUGLAS]">
+    <meta property="og:description" content="Assessoria jurídica especializada e dedicada.">
+    <meta property="og:image" content="assets/img/logo-compartilhamento.jpg">
+    <meta property="og:url" content="https://www.douglaswebsite.com/">
+    <meta property="og:type" content="website">
+
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="src/css/general.css" rel="stylesheet" />
+
+    <script src="assets/bootstrap/js/bootstrap.js" defer></script>
+    <script src="src/js/function.js" defer></script>
 </head>
+
 <body>
-<header><!-- TOP NAVEGATION BAR ------------------------------------------->
-<nav class="top-navbar" id="top-navbar">
-<div class="container-top-navbar-header">
-<div class="content-contact">
-<div class="contact-info"><img alt="icone de um telefone" src="assets/img/icons/info-phone.png" />
-<p>(11) 96413-9009</p>
-</div>
-
-<div class="contact-info"><img alt="icone de um envelope" src="assets/img/icons/info-email.png" />
-<p>diego.rosa@outlook.com.br</p>
-</div>
-</div>
-
-<div class="content-social-network"><a class="social-item" href="https://api.whatsapp.com/send?phone=5511964139009" target="_blank"><img alt="" src="assets/img/icons/whatsapp.png" /> </a> <a class="social-item" href="https://www.facebook.com/DRAdvogadosassociadoos" target="_blank"> <img alt="" src="assets/img/icons/social-facebook.png" /> </a> <a class="social-item" href=" https://www.instagram.com/dradvogados_/" target="_blank"> <img alt="" src="assets/img/icons/social-instragam.png" /> </a></div>
-</div>
-<!--------------------------------------------------------------->
-
-<div class="container-top-navbar-main">
-<div class="content-brand"><img alt="logo marca da empresa" src="assets/img/icons/DR1.svg" /></div>
-
-<div class="content-links"><a class="item-link" href="#home">Home</a> <a class="item-link" href="#benefits">Benefic&iacute;os</a> <a class="item-link" href="#about">Quem somos</a> <a class="item-link" href="#location">Espa&ccedil;o</a> <a class="item-link" href="#client">Clientes</a> <a class="item-link" href="#contact">Contato</a></div>
-
-<div class="content-menu"><button class="button-menu" id="button-open-side-modal"><img alt="" src="assets/img/icons/icon-menu.png" /></button></div>
-</div>
-</nav>
-<!-- TOP NAVEGATION BAR ------------------------------------------->
-
-<div id="after-container-side-menu"></div>
-
-<nav class="side-menu" id="side-menu">
-<div class="container-side-menu">
-<div class="content-header"><img alt="" src="assets/img/icons/DR1.svg" /><button id="button-close-side-modal"><img alt="" src="assets/img/icons/marca-cruzada.png" /></button></div>
-
-<div class="content-main"><a class="item-link" href="#home" onclick="closeSideModal()">Home</a> <a class="item-link" href="#benefits" onclick="closeSideModal()">Benefic&iacute;os</a> <a class="item-link" href="#about" onclick="closeSideModal()">Quem somos</a> <a class="item-link" href="#service" onclick="closeSideModal()">Atua&ccedil;&atilde;o</a> <a class="item-link" href="#location" onclick="closeSideModal()">Espa&ccedil;o</a> <a class="item-link" href="#dr" onclick="closeSideModal()">Sobre a DR</a> <a class="item-link" href="#client" onclick="closeSideModal()">Clientes</a> <a class="item-link" href="#localization" onclick="closeSideModal()">Localiza&ccedil;&atilde;o</a> <a class="item-link" href="#contact" onclick="closeSideModal()">Contato</a></div>
-
-<div class="content-footer"><a class="social-item" href="https://www.facebook.com/DRAdvogadosassociadoos" target="_blank"><img alt="" src="assets/img/icons/social-facebook.png" /> </a> <a class="social-item" href="https://www.instagram.com/dradvogados_/" target="_blank"> <img alt="" src="assets/img/icons/social-instragam.png" /> </a> <a class="social-item" href="https://api.whatsapp.com/send?phone=5511964139009"> <img alt="" src="assets/img/icons/whatsapp.png" style="width: 25px; margin-left: 5px;" /> </a></div>
-</div>
-</nav>
-<!-- FLOATING BUTTON WHATSAPP ------------------------------------->
-
-<nav class="floating-button"><a class="container-floating-button" href="https://api.whatsapp.com/send?phone=5511964139009" target="_blank"><img alt="icone whatsapp" src="assets/img/icons/whatsapp.png" /> </a></nav>
-</header>
-
-<main><!-- SECTION 01 | HOME -------------------------------------------->
-<section class="section-01" id="home">
-<div class="container-section-01">
-<div class="container-text">
-<div class="content-home-brand"><img alt="" src="assets/img/icons/DR1.svg" />
-<h1 class="title-01">Advogados Associados</h1>
-</div>
-
-<p class="subtitle-01 light">A DR Advogados Associados oferece consultoria e assessoria jur&iacute;dica especializada para empresas e conglomerados em &acirc;mbito nacional, proporcionando suporte legal essencial &agrave;s necessidades do seu neg&oacute;cio.</p>
-
-<div class="container-buttons"><a class="default-button-solid" href="#about">Conhe&ccedil;a a DR</a> <a class="default-button-contoured" href="https://api.whatsapp.com/send?phone=5511964139009" target="_blank">Agendar Consultoria</a></div>
-</div>
-</div>
-</section>
-<!-- SECTION 02 | BENEFITS ---------------------------------------->
-
-<section class="section-02" id="benefits">
-<div class="container-section-02">
-<div class="card-benefits"><img alt="" src="assets/img/icons/suporte-online.png" />
-<h3 class="title-03">Consultoria<br />
-Online</h3>
-
-<p class="subtitle-03 light"><strong>Consultoria online 24 horas</strong>: a DR Advogados Associados oferece suporte jur&iacute;dico imediato em emerg&ecirc;ncias, garantindo orienta&ccedil;&atilde;o e solu&ccedil;&otilde;es a qualquer hora, em qualquer situa&ccedil;&atilde;o. Em casos de urg&ecirc;ncia</p>
-</div>
-
-<div class="card-benefits"><img alt="" src="assets/img/icons/cliente.png" />
-<h3 class="title-03">Atendimento<br />
-Presencial</h3>
-
-<p class="subtitle-03 light">Atendimento presencial e telepresencial de segunda a sexta, <strong>das 10:00h &agrave;s 18:00h</strong>. Flexibilidade para suporte jur&iacute;dico, adaptado ao seu hor&aacute;rio e prefer&ecirc;ncias.</p>
-</div>
-
-<div class="card-benefits"><img alt="" src="assets/img/icons/aperto-de-mao.png" />
-<h3 class="title-03">Atua&ccedil;&atilde;o<br />
-Preventiva</h3>
-
-<p class="subtitle-03 light">Atuamos preventivamente e de forma proativa, oferecendo solu&ccedil;&otilde;es jur&iacute;dicas e estrat&eacute;gias administrativas para evitar impasses, reduzir riscos e promover o crescimento do seu neg&oacute;cio.</p>
-</div>
-
-<div class="card-benefits"><img alt="" src="assets/img/icons/equipe.png" />
-<h3 class="title-03">Equipe<br />
-Multidisciplinar</h3>
-
-<p class="subtitle-03 light">Nossa equipe multidisciplinar, composta por advogados, peritos contadores e outros parceiros especializados, colabora de forma integrada para oferecer solu&ccedil;&otilde;es abrangentes e precisas para nossos clientes</p>
-</div>
-</div>
-</section>
-<!-- SECTION 03 | ABOUT ------------------------------------------->
-
-<section class="section-03" id="about">
-<div class="container-section-03">
-<div class="container-text">
-<p class="description-01">DR ADVOGADOS ASSOCIADOS</p>
-
-<h2 class="title-02">Quem somos</h2>
-
-<p class="subtitle-02">Desde 2015, a DR Advogados Associados tem sido essencial na resolu&ccedil;&atilde;o de desafios legais para empresas, com foco em solu&ccedil;&otilde;es personalizadas para cada cliente. Com uma atua&ccedil;&atilde;o &aacute;gil, transparente e eficiente, o escrit&oacute;rio foi reconhecido nos &uacute;ltimos tr&ecirc;s anos com o selo &quot;Top of Mind&quot; e premiado pela TV Cen&aacute;rio em 2019, refletindo seu compromisso com a excel&ecirc;ncia. Al&eacute;m dos pr&ecirc;mios, a DR Advogados construiu uma reputa&ccedil;&atilde;o de confian&ccedil;a e credibilidade, oferecendo solu&ccedil;&otilde;es jur&iacute;dicas s&oacute;lidas e mantendo-se como um parceiro confi&aacute;vel no &acirc;mbito empresarial.</p>
-</div>
-
-<div class="container-img"><img alt="" src="assets/img/carrousel/DR-13.jpg" /></div>
-</div>
-</section>
-<!-- SECTION 04 | SERVICE ----------------------------------------->
-
-<section class="section-04" id="service">
-<div class="container-section-04">
-<div class="card-service"><img alt="" src="assets/img/icons/icon-service.png" />
-<h3 class="title-03">Criminal</h3>
-
-<p class="subtitle-03 light">Na &aacute;rea criminal, nossa atua&ccedil;&atilde;o em &acirc;mbito consultivo e contencioso &eacute; voltada para a defesa de nossos clientes. Na DR Advogados e Associados Jur&iacute;dica, n&atilde;o apenas buscamos defender, mas tamb&eacute;m investigamos minuciosamente as origens dos conflitos para uma atua&ccedil;&atilde;o preventiva. Comprometemo-nos em oferecer suporte especializado e estrat&eacute;gico, assegurando os direitos e a prote&ccedil;&atilde;o legal de cada cliente em quest&otilde;es criminais</p>
-
-<div class="divider"></div>
-</div>
-
-<div class="card-service"><img alt="" src="assets/img/icons/trabalhador.png" />
-<h3 class="title-03">Trabalhista</h3>
-
-<p class="subtitle-03 light">Na esfera trabalhista, nossa abordagem em consultivo, contencioso e log&iacute;stica jur&iacute;dica &eacute; dedicada a oferecer suporte abrangente aos nossos clientes. Na DR Advogados e Associados Jur&iacute;dica, n&atilde;o s&oacute; defendemos direitos, mas tamb&eacute;m identificamos e mapeamos as origens dos conflitos trabalhistas. Priorizamos a preven&ccedil;&atilde;o, garantindo conformidade legal e orienta&ccedil;&atilde;o estrat&eacute;gica para quest&otilde;es laborais, protegendo os interesses de empregadores e funcion&aacute;rios</p>
-
-<div class="divider"></div>
-</div>
-
-<div class="card-service"><img alt="" src="assets/img/icons/consumidor.png" />
-<h3 class="title-03">Consumidor</h3>
-
-<p class="subtitle-03 light">Na &aacute;rea do consumidor, nosso foco consultivo e contencioso visa n&atilde;o apenas defender, mas principalmente prevenir conflitos. Na DR Advogados e Associados, empenhamo-nos em oferecer suporte especializado, n&atilde;o somente na resolu&ccedil;&atilde;o, mas na identifica&ccedil;&atilde;o e mapeamento das origens dos conflitos consumeristas. Com essa abordagem preventiva, buscamos assegurar a prote&ccedil;&atilde;o dos direitos dos consumidores e a conformidade legal das empresas.</p>
-
-<div class="divider"></div>
-</div>
-
-<div class="card-service"><img alt="" src="assets/img/icons/companhia.png" />
-<h3 class="title-03">Empresarial</h3>
-
-<p class="subtitle-03 light">No &acirc;mbito empresarial, nossa atua&ccedil;&atilde;o consultiva, contenciosa e de log&iacute;stica jur&iacute;dica &eacute; moldada para proporcionar mais do que defesa. Na DR Advogados e Associados, nosso objetivo &eacute; identificar e mapear as origens dos conflitos empresariais para uma atua&ccedil;&atilde;o mais preventiva. Comprometemo-nos em oferecer suporte estrat&eacute;gico e especializado, protegendo os interesses comerciais, buscando a conformidade legal e a excel&ecirc;ncia nas pr&aacute;ticas empresariais.</p>
-
-<div class="divider"></div>
-</div>
-</div>
-</section>
-<!-- SECTION 05 | OUR LOCATION ------------------------------------>
-
-<section class="section-05" id="location">
-<div class="container-section-05">
-<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleInterval">
-<div class="carousel-inner">
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-1.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-2.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-3.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-4.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-5.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-6.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-7.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-8.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-9.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-10.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-11.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-12.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-13.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-14.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-15.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-16.jpg" /></div>
-
-<div class="carousel-item active" data-bs-interval="2000"><img alt="..." class="d-block w-100" src="assets/img/carrousel/DR-17.jpg" /></div>
-</div>
-<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleInterval" type="button"><span class="visually-hidden">Previous</span></button><button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleInterval" type="button"><span class="visually-hidden">Next</span></button></div>
-
-<div class="container-text">
-<p class="description-01">DR ADVOGADOS ASSOCIADOS</p>
-
-<h2 class="title-02">Espa&ccedil;o preparado para voc&ecirc;</h2>
-
-<p class="subtitle-02">O prest&iacute;gio e a credibilidade conquistados diariamente pela DR Advogados Associados s&atilde;o frutos de um trabalho baseado na &eacute;tica e compromisso profissional. Nosso compromisso vai al&eacute;m: &eacute; incondicional em atender as necessidades de cada cliente, abra&ccedil;ando suas demandas de maneira &iacute;ntegra e dedicada.</p>
-
-<p class="subtitle-02">Nossa estrutura &eacute; um reflexo desse comprometimento. Contamos com um ambiente moderno e acolhedor, cuidadosamente projetado para proporcionar um atendimento que vai al&eacute;m das expectativas. Buscamos criar um ambiente onde nossos clientes se sintam confort&aacute;veis, acolhidos e confiantes de que ser&atilde;o atendidos com excel&ecirc;ncia e cuidado. Essa atmosfera &eacute; o alicerce que complementa nossa abordagem profissional e nossa busca cont&iacute;nua pela satisfa&ccedil;&atilde;o daqueles que confiam em nossos servi&ccedil;os.</p>
-</div>
-</div>
-</section>
-<!-- SECTION 06 --------------------------------------------------->
-
-<section class="section-06" id="dr">
-<div class="container-section-06">
-<div class="container-img"><img alt="" src="assets/img/carrousel/DR-11.jpg" /></div>
-
-<div class="container-text">
-<div class="content-home-brand"><img alt="" src="assets/img/icons/DR1.svg" />
-<h1 class="title-01">Advogados Associados</h1>
-</div>
-
-<p class="subtitle-02 light">Criada do zero pelo fundador e prestigiado doutor Diego Rosa, no qual desde cedo sempre teve sua paix&atilde;o declarada para advocacia, um jovem de fam&iacute;lia humilde e perif&eacute;rica, conseguiu sair da periferia e al&ccedil;ar novos ares, sempre com muita dedica&ccedil;&atilde;o e trabalho, sem perder suas ra&iacute;zes fundou seu sonho afim de ajudar outros sonhos a serem realizados.<br />
-<br />
-Desde ent&atilde;o a DR Advogados Associados tem desempenhado um papel fundamental na resolu&ccedil;&atilde;o de desafios legais enfrentados pelas empresas, neg&oacute;cios e pessoas. Nosso compromisso reside em identificar e enfrentar eficazmente os problemas jur&iacute;dicos, oferecendo solu&ccedil;&otilde;es personalizadas para as necessidades individuais de cada cliente.<br />
-<br />
-Nosso fundador ap&oacute;s anos de experiencia em uma renomada institui&ccedil;&atilde;o bancaria, e ap&oacute;s passar 2 (Dois Anos) como servidor p&uacute;blico Estadual Concursado, decidiu abrir m&atilde;o da estabilidade e buscar novos horizontes em busca de seu t&atilde;o sonhado desejo de se tornar um advogado de renome e prestigio, trazendo consigo uma vasta experi&ecirc;ncia adquirida em anos de servi&ccedil;os prestados tanto na iniciativa publica como na privada, fazendo assim um escrit&oacute;rio de advocacia com padr&atilde;o internacional, com profissionais altamente qualificados em todas as &aacute;reas do direito.<br />
-<br />
-Nossa atua&ccedil;&atilde;o &eacute; marcada por uma abordagem transparente, &aacute;gil e eficiente, permitindo-nos obter reconhecimento significativo. Nos &uacute;ltimos tr&ecirc;s anos, fomos agraciados com o selo &#39;Top of Mind&#39;, evidenciando nosso lugar como um dos escrit&oacute;rios de advocacia empresarial mais respeitados da regi&atilde;o. Al&eacute;m disso, o pr&ecirc;mio de destaque da TV Cen&aacute;rio em 2019 foi um reconhecimento de nosso comprometimento com a excel&ecirc;ncia e a qualidade em nossos servi&ccedil;os.<br />
-<br />
-A DR Advogados Associados tem como sua espinha dorsal um atendimento personalizado e humanizado, trazendo simplicidade para quest&otilde;es altamente complexas, sempre buscando resultados positivos e satisfa&ccedil;&atilde;o de nossos&nbsp;clientes.<br />
-&nbsp;</p>
-
-<div class="container-buttons"><a class="default-button-solid" href="#contact">Contato</a> <a class="default-button-contoured" href="https://api.whatsapp.com/send?phone=5511964139009" target="_blank">Agendar Consulta</a></div>
-</div>
-</div>
-</section>
-<!-- SECTION 07 --------------------------------------------------->
-
-<section class="title-client">
-<h2 class="title-02 title-client">Conhe&ccedil;a nossos clientes</h2>
-</section>
-
-<section class="section-07" id="client">
-<div class="container-section-07">
-<div class="item-client"><img alt="" src="assets/img/companies/client-1.png" style="width: 220px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-2.png" style="width: 220px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-3.png" style="width: 160px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-4.png" style="width: 230px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-5.png" style="width: 160px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-6.png" style="width: 230px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-7.png" style="width: 220px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-8.png" style="width: 250px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-9.png" style="width: 120px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-10.png" style="width: 160px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-11.png" style="width: 150px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-12.png" style="width: 180px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-13.png" style="width: 150px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-14.png" style="width: 180px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-15.png" style="width: 150px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-16.png" style="width: 180px;" /></div>
-</div>
-
-<div class="container-section-07" style="margin-left: 20px;">
-<div class="item-client"><img alt="" src="assets/img/companies/client-1.png" style="width: 220px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-2.png" style="width: 220px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-3.png" style="width: 160px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-4.png" style="width: 230px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-5.png" style="width: 160px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-6.png" style="width: 230px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-7.png" style="width: 220px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-8.png" style="width: 250px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-9.png" style="width: 120px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-10.png" style="width: 160px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-11.png" style="width: 150px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-12.png" style="width: 180px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-13.png" style="width: 150px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-14.png" style="width: 180px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-15.png" style="width: 150px;" /></div>
-
-<div class="item-client"><img alt="" src="assets/img/companies/client-16.png" style="width: 180px;" /></div>
-</div>
-</section>
-<!-- SECTION 08 --------------------------------------------------->
-
-<section class="section-08" id="localization">
-<div class="container-section-08">
-<div class="container-localization"><iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14631.342842539154!2d-46.2638131!3d-23.5384107!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce653e8bdb38c9%3A0xff47ec263e87f41!2sDR%20Advogados%20Associados!5e0!3m2!1spt-BR!2sbr!4v1728608969372!5m2!1spt-BR!2sbr " style="border:0;"></iframe></div>
-
-<div class="container-info">
-<div class="content-text">
-<p class="description-01">DR ADVOGADOS ASSOCIADOS</p>
-
-<h2 class="title-02">Nossa Localiza&ccedil;&atilde;o</h2>
-
-<p class="subtitle-02">A DR Advogados Associados est&aacute; situada na R. Paulo Alves Cassola, 74 - Real Park Tiet&ecirc;, Mogi das Cruzes. Nosso escrit&oacute;rio foi pensado para proporcionar um ambiente acolhedor e funcional, onde nossos clientes s&atilde;o recebidos com todo o conforto e profissionalismo que merecem.<br />
-<br />
-Estamos de portas abertas para te receber! Agende uma visita e conhe&ccedil;a nosso espa&ccedil;o, ser&aacute; um prazer conversar sobre como podemos ajudar voc&ecirc; com as melhores solu&ccedil;&otilde;es jur&iacute;dicas.</p>
-</div>
-
-<div class="item-contact"><img alt="" src="assets/img/icons/info-email.png" />
-<p>dr.assessoria@outlook.com.br</p>
-</div>
-
-<div class="item-contact"><img alt="" src="assets/img/icons/mapas-e-bandeiras.png" />
-<p>R. Diego Sande, 308 - Jardim Camargo Novo, S&atilde;o Paulo - SP, 08121-100</p>
-</div>
-
-<div class="item-contact"><img alt="" src="assets/img/icons/mapas-e-bandeiras.png" />
-<p>R. Paulo Alves Cassola - JundiapebaMogi das Cruzes - SP, 08752-580</p>
-</div>
-</div>
-</div>
-</section>
-</main>
-
-<footer class="section-footer" id="contact">
-<div class="container-footer">
-<div class="container-brand">
-<div class="content-brand-text"><img alt="" src="assets/img/icons/DR1.svg" />
-<p class="subtitle-01 light">A DR Adovogados Associados presta consultoria e assessoria jur&iacute;dica para empresas e conglomerados situados em todo territ&oacute;rio nacional que necessitem de apoio jur&iacute;dico.</p>
-</div>
-
-<div class="content-brand-social"><a href="https://api.whatsapp.com/send?phone=5511964139009" target="_blank"><img alt="" src="assets/img/social/white-whatsapp.png" /> </a> <a href="https://www.facebook.com/DRAdvogadosassociadoos" target="_blank"> <img alt="" src="assets/img/social/white-facebook.png" /> </a> <a href="https://www.instagram.com/dradvogados_/" target="_blank"> <img alt="" src="assets/img/social/white-instagam.png" /> </a></div>
-</div>
-
-<div class="container-navegation">
-<h3 class="title-03">Navega&ccedil;&atilde;o</h3>
-<a class="item-link" href="#home">Home</a> <a class="item-link" href="#benefits">Benefic&iacute;os</a> <a class="item-link" href="#about">Quem somos</a> <a class="item-link" href="#service">Atua&ccedil;&atilde;o</a> <a class="item-link" href="#location">Espa&ccedil;o</a> <a class="item-link" href="#dr">Sobre a DR</a> <a class="item-link" href="#client">Clientes</a> <a class="item-link" href="#localization">Localiza&ccedil;&atilde;o</a> <a class="item-link" href="#contact">Contato</a></div>
-
-<div class="container-contact">
-<h3 class="title-03">Contato</h3>
-
-<div class="item-contact"><img alt="" src="assets/img/icons/info-phone.png" />
-<p>(11) 96413-9009</p>
-</div>
-
-<div class="item-contact"><img alt="" src="assets/img/icons/info-email.png" />
-<p>dr.assessoria@outlook.com.br</p>
-</div>
-
-<div class="item-contact"><img alt="" src="assets/img/icons/mapas-e-bandeiras.png" />
-<p>R. Diego Sande, 308 - Jardim Camargo Novo, S&atilde;o Paulo - SP, 08121-100</p>
-</div>
-
-<div class="item-contact"><img alt="" src="assets/img/icons/mapas-e-bandeiras.png" />
-<p>R. Paulo Alves Cassola - JundiapebaMogi das Cruzes - SP, 08752-580</p>
-</div>
-</div>
-</div>
-
-<div class="container-footer-copy">
-<div class="container-brand">
-<p class="copy">DR ADVOGADOS ASSOCIADOS - Todos os direitos reservados</p>
-</div>
-</div>
-</footer>
-
-<footer class="copy-crisp">
-<p><a href="https://www.instagram.com/pixelcrisp_designer/">Desenvolvido por PixelCrisp Designer</a></p>
-</footer>
+    <header>
+        <nav class="top-navbar" id="top-navbar">
+            <div class="container-top-navbar-header">
+                <div class="content-contact">
+                    <div class="contact-info">
+                        <img alt="ícone telefone" src="assets/img/icons/info-phone.png" />
+                        <p>[INSERIR TELEFONE EX: (11) 99999-9999]</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <img alt="ícone envelope" src="assets/img/icons/info-email.png" />
+                        <p>[INSERIR EMAIL DE CONTATO]</p>
+                    </div>
+                </div>
+
+                <div class="content-social-network">
+                    <a class="social-item" href="[LINK WHATSAPP]" target="_blank">
+                        <img alt="WhatsApp" src="assets/img/icons/whatsapp.png" />
+                    </a>
+                    <a class="social-item" href="[LINK FACEBOOK]" target="_blank">
+                        <img alt="Facebook" src="assets/img/icons/social-facebook.png" />
+                    </a>
+                    <a class="social-item" href="[LINK INSTAGRAM]" target="_blank">
+                        <img alt="Instagram" src="assets/img/icons/social-instragam.png" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-top-navbar-main">
+                <div class="content-brand">
+                    <img alt="Logo do Escritório" src="assets/img/logo-principal.svg" />
+                </div>
+
+                <div class="content-links">
+                    <a class="item-link" href="#home">Home</a>
+                    <a class="item-link" href="#benefits">Benefícios</a>
+                    <a class="item-link" href="#about">Quem somos</a>
+                    <a class="item-link" href="#location">Espaço</a>
+                    <a class="item-link" href="#client">Clientes</a>
+                    <a class="item-link" href="#contact">Contato</a>
+                </div>
+
+                <div class="content-menu">
+                    <button class="button-menu" id="button-open-side-modal">
+                        <img alt="Menu Mobile" src="assets/img/icons/icon-menu.png" />
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="after-container-side-menu"></div>
+        <nav class="side-menu" id="side-menu">
+            <div class="container-side-menu">
+                <div class="content-header">
+                    <img alt="Logo Menu" src="assets/img/logo-principal.svg" />
+                    <button id="button-close-side-modal">
+                        <img alt="Fechar" src="assets/img/icons/marca-cruzada.png" />
+                    </button>
+                </div>
+                <div class="content-main">
+                    <a class="item-link" href="#home" onclick="closeSideModal()">Home</a>
+                    <a class="item-link" href="#benefits" onclick="closeSideModal()">Benefícios</a>
+                    <a class="item-link" href="#about" onclick="closeSideModal()">Quem somos</a>
+                    <a class="item-link" href="#service" onclick="closeSideModal()">Atuação</a>
+                    <a class="item-link" href="#location" onclick="closeSideModal()">Espaço</a>
+                    <a class="item-link" href="#dr" onclick="closeSideModal()">Sobre Nós</a>
+                    <a class="item-link" href="#client" onclick="closeSideModal()">Clientes</a>
+                    <a class="item-link" href="#localization" onclick="closeSideModal()">Localização</a>
+                    <a class="item-link" href="#contact" onclick="closeSideModal()">Contato</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="floating-button">
+            <a class="container-floating-button" href="[LINK WHATSAPP]" target="_blank">
+                <img alt="ícone whatsapp" src="assets/img/icons/whatsapp.png" />
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-01" id="home">
+            <div class="container-section-01">
+                <div class="container-text">
+                    <div class="content-home-brand">
+                        <img alt="Logo" src="assets/img/logo-principal.svg" />
+                        <h1 class="title-01">[NOME DO ESCRITÓRIO]</h1>
+                    </div>
+                    <p class="subtitle-01 light">
+                        [INSERIR FRASE DE EFEITO / RESUMO DA PROPOSTA DE VALOR DO DOUGLAS].
+                        Ex: Oferecemos consultoria jurídica especializada com foco na resolução ágil de conflitos.
+                    </p>
+                    <div class="container-buttons">
+                        <a class="default-button-solid" href="#about">Conheça o Escritório</a>
+                        <a class="default-button-contoured" href="[LINK WHATSAPP]" target="_blank">Agendar Consultoria</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-02" id="benefits">
+            <div class="container-section-02">
+                <div class="card-benefits">
+                    <img alt="" src="assets/img/icons/suporte-online.png" />
+                    <h3 class="title-03">Consultoria<br />Online</h3>
+                    <p class="subtitle-03 light">
+                        [DESCRIÇÃO DO SERVIÇO ONLINE]. Ex: Atendimento remoto ágil através de videoconferência e WhatsApp para sua comodidade.
+                    </p>
+                </div>
+                <div class="card-benefits">
+                    <img alt="" src="assets/img/icons/cliente.png" />
+                    <h3 class="title-03">Atendimento<br />Presencial</h3>
+                    <p class="subtitle-03 light">
+                        Atendimento presencial com hora marcada. [INSERIR HORÁRIO DE FUNCIONAMENTO]. Ex: Seg a Sex das 09h às 18h.
+                    </p>
+                </div>
+                <div class="card-benefits">
+                    <img alt="" src="assets/img/icons/aperto-de-mao.png" />
+                    <h3 class="title-03">Atuação<br />Preventiva</h3>
+                    <p class="subtitle-03 light">
+                        Foco na advocacia preventiva para evitar litígios e reduzir riscos para o seu negócio ou patrimônio.
+                    </p>
+                </div>
+                <div class="card-benefits">
+                    <img alt="" src="assets/img/icons/equipe.png" />
+                    <h3 class="title-03">Especialistas<br />Qualificados</h3>
+                    <p class="subtitle-03 light">
+                        Profissionais atualizados e dedicados a encontrar a melhor estratégia jurídica para o seu caso.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-03" id="about">
+            <div class="container-section-03">
+                <div class="container-text">
+                    <p class="description-01">[NOME DO ESCRITÓRIO]</p>
+                    <h2 class="title-02">Quem somos</h2>
+                    <p class="subtitle-02">
+                        [INSERIR TEXTO SOBRE A HISTÓRIA DO ESCRITÓRIO DO DOUGLAS].
+                        Ex: Fundado com o objetivo de trazer modernidade e transparência ao direito, o escritório atua com foco total no cliente...
+                    </p>
+                </div>
+                <div class="container-img">
+                    <img alt="Foto do Escritório" src="assets/img/foto-quem-somos.jpg" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section-04" id="service">
+            <div class="container-section-04">
+                <div class="card-service">
+                    <img alt="" src="assets/img/icons/icon-service.png" />
+                    <h3 class="title-03">[ÁREA 1 - EX: CRIMINAL]</h3>
+                    <p class="subtitle-03 light">[BREVE DESCRIÇÃO DA ATUAÇÃO NESTA ÁREA]</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="card-service">
+                    <img alt="" src="assets/img/icons/trabalhador.png" />
+                    <h3 class="title-03">[ÁREA 2 - EX: TRABALHISTA]</h3>
+                    <p class="subtitle-03 light">[BREVE DESCRIÇÃO DA ATUAÇÃO NESTA ÁREA]</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="card-service">
+                    <img alt="" src="assets/img/icons/consumidor.png" />
+                    <h3 class="title-03">[ÁREA 3 - EX: CONSUMIDOR]</h3>
+                    <p class="subtitle-03 light">[BREVE DESCRIÇÃO DA ATUAÇÃO NESTA ÁREA]</p>
+                    <div class="divider"></div>
+                </div>
+                <div class="card-service">
+                    <img alt="" src="assets/img/icons/companhia.png" />
+                    <h3 class="title-03">[ÁREA 4 - EX: EMPRESARIAL]</h3>
+                    <p class="subtitle-03 light">[BREVE DESCRIÇÃO DA ATUAÇÃO NESTA ÁREA]</p>
+                    <div class="divider"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-05" id="location">
+            <div class="container-section-05">
+                <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleInterval">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img alt="Foto escritório 1" class="d-block w-100" src="assets/img/carrousel/foto1.jpg" />
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img alt="Foto escritório 2" class="d-block w-100" src="assets/img/carrousel/foto2.jpg" />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleInterval" type="button"><span class="visually-hidden">Anterior</span></button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleInterval" type="button"><span class="visually-hidden">Próximo</span></button>
+                </div>
+
+                <div class="container-text">
+                    <p class="description-01">[NOME DO ESCRITÓRIO]</p>
+                    <h2 class="title-02">Nosso Espaço</h2>
+                    <p class="subtitle-02">
+                        [TEXTO SOBRE A ESTRUTURA FÍSICA]. Ex: Contamos com um ambiente moderno e acolhedor, preparado para receber você com conforto e privacidade para tratar de seus assuntos jurídicos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-06" id="dr">
+            <div class="container-section-06">
+                <div class="container-img">
+                    <img alt="Foto do Dr. Douglas" src="assets/img/foto-douglas.jpg" />
+                </div>
+
+                <div class="container-text">
+                    <div class="content-home-brand">
+                        <img alt="" src="assets/img/logo-principal.svg" />
+                        <h1 class="title-01">[DOUGLAS SOBRENOME]</h1>
+                    </div>
+
+                    <p class="subtitle-02 light">
+                        [TEXTO BIO DO DOUGLAS].
+                        Aqui você deve contar a história dele. Onde se formou, suas paixões na advocacia, sua experiência profissional e o que o motivou a abrir o escritório.
+                        <br><br>
+                        Ex: O Dr. Douglas é especialista em [ÁREA], com foco em resolver conflitos de forma humanizada...
+                    </p>
+
+                    <div class="container-buttons">
+                        <a class="default-button-solid" href="#contact">Contato</a>
+                        <a class="default-button-contoured" href="[LINK WHATSAPP]" target="_blank">Agendar Consulta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="title-client">
+            <h2 class="title-02 title-client">Conheça nossos clientes</h2>
+        </section>
+
+        <section class="section-07" id="client">
+            <div class="container-section-07">
+                <div class="item-client"><img alt="Cliente 1" src="assets/img/companies/logo-cliente-1.png" style="width: 220px;" /></div>
+                <div class="item-client"><img alt="Cliente 2" src="assets/img/companies/logo-cliente-2.png" style="width: 220px;" /></div>
+            </div>
+        </section>
+
+        <section class="section-08" id="localization">
+            <div class="container-section-08">
+                <div class="container-localization">
+                    <iframe src="https://www.google.com/maps/embed?pb=PLACEHOLDER_DO_GOOGLE_MAPS" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="container-info">
+                    <div class="content-text">
+                        <p class="description-01">[NOME DO ESCRITÓRIO]</p>
+                        <h2 class="title-02">Nossa Localização</h2>
+                        <p class="subtitle-02">
+                            Venha nos visitar. Estamos localizados em um ponto estratégico para melhor atendê-lo.
+                        </p>
+                    </div>
+
+                    <div class="item-contact">
+                        <img alt="" src="assets/img/icons/info-email.png" />
+                        <p>[INSERIR EMAIL]</p>
+                    </div>
+
+                    <div class="item-contact">
+                        <img alt="" src="assets/img/icons/mapas-e-bandeiras.png" />
+                        <p>[INSERIR ENDEREÇO COMPLETO]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-footer" id="contact">
+        <div class="container-footer">
+            <div class="container-brand">
+                <div class="content-brand-text">
+                    <img alt="Logo Rodapé" src="assets/img/logo-principal.svg" />
+                    <p class="subtitle-01 light">
+                        [BREVE TEXTO INSTITUCIONAL NO RODAPÉ].
+                    </p>
+                </div>
+                <div class="content-brand-social">
+                    <a href="[LINK WHATSAPP]" target="_blank"><img alt="" src="assets/img/social/white-whatsapp.png" /></a>
+                    <a href="[LINK FACEBOOK]" target="_blank"><img alt="" src="assets/img/social/white-facebook.png" /></a>
+                    <a href="[LINK INSTAGRAM]" target="_blank"><img alt="" src="assets/img/social/white-instagam.png" /></a>
+                </div>
+            </div>
+
+            <div class="container-navegation">
+                <h3 class="title-03">Navegação</h3>
+                <a class="item-link" href="#home">Home</a>
+                <a class="item-link" href="#benefits">Benefícios</a>
+                <a class="item-link" href="#about">Quem somos</a>
+                <a class="item-link" href="#service">Atuação</a>
+                <a class="item-link" href="#location">Espaço</a>
+                <a class="item-link" href="#client">Clientes</a>
+                <a class="item-link" href="#contact">Contato</a>
+            </div>
+
+            <div class="container-contact">
+                <h3 class="title-03">Contato</h3>
+                <div class="item-contact">
+                    <img alt="" src="assets/img/icons/info-phone.png" />
+                    <p>[INSERIR TELEFONE]</p>
+                </div>
+                <div class="item-contact">
+                    <img alt="" src="assets/img/icons/info-email.png" />
+                    <p>[INSERIR EMAIL]</p>
+                </div>
+                <div class="item-contact">
+                    <img alt="" src="assets/img/icons/mapas-e-bandeiras.png" />
+                    <p>[INSERIR ENDEREÇO RESUMIDO]</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-footer-copy">
+            <div class="container-brand">
+                <p class="copy">[NOME DO ESCRITÓRIO] - Todos os direitos reservados - 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="copy-crisp">
+        <p><a href="#">Desenvolvido por [SEU NOME OU EMPRESA]</a></p>
+    </footer>
 </body>
 </html>

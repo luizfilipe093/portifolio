@@ -1,0 +1,112 @@
+/* SECTION 03 | ABOUT -----------------------------------*/
+
+.section-03{
+  width: 100%;
+  padding: 5rem 0rem 0rem;
+  background-color: #fdfdfd;
+
+  border: var(--border-section);
+}
+
+/* SECTION 03 | CONTAINER SECTION -----------------------*/
+
+.container-section-03{
+  height: 100%;
+  width: 100%;
+  max-width: var(--max-width-container-1);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  border: var(--border-container);
+}
+
+/* SECTION 03 | CONTAINER TEXT --------------------------*/
+
+.container-section-03 > .container-text{
+  width: 90%;
+  max-width: var(--max-width-container-2);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: var(--border-container);
+}
+
+.container-section-03 > .container-text > .subtitle-02{
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* SECTION 03 | CONTAINER IMG ---------------------------*/
+
+.container-section-03 > .container-img{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  
+  border: var(--border-container);
+}
+
+.container-section-03 > .container-img > img{
+  width: 100%;
+  z-index: 2;
+
+  max-width: 700px;
+}
+
+.container-section-03 > .container-img::before{
+  content: "";
+  position: absolute;
+  background-color: #FFCA57;
+
+  width: 50%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+/* SECTION 03 | MEDIA SCREEN ----------------------------*/
+
+@media screen and (min-width: 992px){
+  .section-03{
+    padding: 0;
+  }
+
+  .container-section-03{
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .container-section-03 > .container-text{
+    min-height: 700px;
+    padding: 0 15px;
+  }
+
+  .container-section-03 > .container-text > .description-02,
+  .container-section-03 > .container-text > .title-02{
+    text-align: start;
+  }
+
+  .container-section-03 > .container-img{
+    height: 100%;
+    min-height: 700px;
+  }
+
+  .container-section-03 > .container-img > img{
+    max-width: 700px;
+  }
+}
+
+

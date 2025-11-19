@@ -1,80 +1,83 @@
 /* ======================================================
-   ARQUIVO MESTRE DE ESTILOS (GENERAL.CSS)
-   ====================================================== */
+    ARQUIVO MESTRE DE ESTILOS (GENERAL.CSS)
+    ====================================================== */
 
 /* 1. IMPORT FONTS --------------------------------------*/
+/*
+    Se você está importando o Inter via Google Fonts também,
+    pode remover este @font-face. Caso contrário, mantenha-o.
+    O @font-face da Roboto Slab foi removido porque ela agora
+    é importada via o link no HTML.
+*/
 @font-face {
-  font-family: 'Inter';
-  src: url('../../assets/font/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-family: 'Inter';
+    src: url('../../assets/font/Inter-VariableFont_slnt,wght.ttf') format('truetype');
 }
 
-/* (Opcional: Se você baixar a Roboto, descomente abaixo) */
-/*
-@font-face {
-  font-family: 'Roboto';
-  src: url('../../assets/font/RobotoSlab-VariableFont_wght.ttf');
-}
-*/
 
 /* 2. GLOBAL RESETS -------------------------------------*/
 * {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .d-none {
-  display: none;
-  visibility: hidden;
+    display: none;
+    visibility: hidden;
 }
 
 /* 3. VARIABLES (CORES E MEDIDAS) -----------------------*/
 :root {
-  /* Container Variables */
-  --width-container-1:          90%;
-  --width-container-2:          100%;
-  --max-width-container-1:      1500px;
-  --max-width-container-2:      700px;
-  --margin-bottom-content-text: 35px;
+    /* Container Variables */
+    --width-container-1: 90%;
+    --width-container-2: 100%;
+    --max-width-container-1: 1500px;
+    --max-width-container-2: 700px;
+    --margin-bottom-content-text: 35px;
 
-  /* Borders */
-  --border-section:             none;
-  --border-container:           none;
-  --border-container-content:   none;
-  --border-container-item:      none;
+    /* Borders */
+    --border-section: none;
+    --border-container: none;
+    --border-container-content: none;
+    --border-container-item: none;
 
-  /* Colors */
-  --primary-color-1: #CD9C20;
-  --primary-color-2: #191919;
-  --primary-color-3: #fff;
+    /* Colors */
+    --primary-color-1: #CD9C20; /* Dourado */
+    --primary-color-2: #191919; /* Preto Quase Total */
+    --primary-color-3: #fff;    /* Branco */
 
-  --secondary-color-1: #ffffffb3;
-  --secondary-color-2: #191919d1;
-  --secondary-color-3: transparent;
+    --secondary-color-1: #ffffffb3; /* Branco transparente */
+    --secondary-color-2: #191919d1; /* Preto transparente */
+    --secondary-color-3: transparent;
+
+    /* Fonts (Adicionado para melhor controle) */
+    --font-inter: 'Inter', sans-serif;
+    --font-roboto-slab: 'Roboto Slab', serif; /* Mantido para uso consistente */
 }
 
 /* 4. TIPOGRAFIA PADRÃO ---------------------------------*/
 .container-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: var(--width-container-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--width-container-1);
 }
 
 /* Descriptions */
 .description-01, .description-02, .description-03 {
-  width: var(--width-container-2);
-  max-width: var(--max-width-container-2);
-  border: var(--border-container-item);
-  margin-bottom: 15px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
+    width: var(--width-container-2);
+    max-width: var(--max-width-container-2);
+    border: var(--border-container-item);
+    margin-bottom: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .description-01 { font-size: min(18px, 3vw); letter-spacing: 8px; }
@@ -83,16 +86,15 @@ html {
 
 /* Titles */
 .title-01, .title-02, .title-03 {
-  width: var(--width-container-2);
-  max-width: var(--max-width-container-2);
-  border: var(--border-container-item);
-  margin-bottom: var(--margin-bottom-content-text);
-  font-weight: 800;
-  line-height: 1;
-  text-align: center;
-  color: var(--primary-color-1);
-  /* Fallback para Inter se Roboto não carregar */
-  font-family: 'Roboto Slab', 'Inter', serif; 
+    width: var(--width-container-2);
+    max-width: var(--max-width-container-2);
+    border: var(--border-container-item);
+    margin-bottom: var(--margin-bottom-content-text);
+    font-weight: 800; /* Pode ser ajustado para qualquer peso entre 100 e 900 */
+    line-height: 1;
+    text-align: center;
+    color: var(--primary-color-1);
+    font-family: var(--font-roboto-slab, var(--font-inter)); /* Usando variáveis */
 }
 
 .title-01 { font-size: min(12vw, 60px); }
@@ -101,41 +103,42 @@ html {
 
 /* Subtitles */
 .subtitle-01, .subtitle-02, .subtitle-03 {
-  width: var(--width-container-2);
-  max-width: var(--max-width-container-2);
-  border: var(--border-container-item);
+    width: var(--width-container-2);
+    max-width: var(--max-width-container-2);
+    border: var(--border-container-item);
 }
 
 .subtitle-01 {
-  margin-bottom: var(--margin-bottom-content-text);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.8;
+    margin-bottom: var(--margin-bottom-content-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 .subtitle-02 {
-  color: var(--secondary-color-2);
-  font-size: min(3.5vw, 14px);
-  font-weight: 400;
-  line-height: 1.5;
+    color: var(--secondary-color-2);
+    font-size: min(3.5vw, 14px);
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .subtitle-03 {
-  font-size: min(5vw, 14px);
-  font-weight: 300;
-  text-align: center;
-  line-height: 1.5;
+    font-size: min(5vw, 14px);
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
 }
 
 /* Light Mode Text */
 .description-01.light, .description-02.light, .description-03.light,
-.subtitle-01.light, .subtitle-02.light, .subtitle-03.light {
-  color: var(--secondary-color-1);
+.subtitle-01.light, .subtitle-02.light, .subtitle-03.light,
+.title-01.light, .title-02.light, .title-03.light {
+    color: var(--secondary-color-1);
 }
 
 /* 5. BUTTONS -------------------------------------------*/
 .container-buttons {
-  width: var(--width-container-2);
+    width: var(--width-container-2);
   max-width: var(--max-width-container-2);
   border: var(--border-container-item);
   display: flex;
@@ -559,7 +562,7 @@ html {
   .container-section-01 .container-buttons > .default-button-contoured{ max-width: 280px; }
 }
 
-/* SECTION 02 | BENEFITS */
+/* SECTION 02 | SERVICES */
 .section-02{
   background: var(--primary-color-2);
   width: 100%;
@@ -579,7 +582,7 @@ html {
   border: var(--border-container);
 }
 
-.card-benefits{
+.card-services{
   border: 1px solid #ffffff11;
   border-bottom: 2px solid #FFCA57;
   background: transparent;
@@ -593,31 +596,31 @@ html {
   padding: 15px;
 }
 
-.card-benefits > img{
+.card-services > img{
   width: 100%;
   max-width: 65px;
   margin-bottom: 15px;
   border: var(--border-container-item);
 }
 
-.card-benefits > .subtitle-03{ text-align: justify; min-height: 120px; }
+.card-services > .subtitle-03{ text-align: justify; min-height: 120px; }
 
 @media screen and (min-width: 600px){
   .section-02{ padding: 65px 0rem; }
   .container-section-02{ gap: 10px; grid-template-columns: 1fr 1fr; }
-  .card-benefits{ width: 100%; }
-  .card-benefits > .subtitle-03{ min-height: 155px; }
+  .card-services{ width: 100%; }
+  .card-services > .subtitle-03{ min-height: 155px; }
 }
 
-@media screen and (min-width: 713px){ .card-benefits > .subtitle-03{ min-height: 120px; } }
+@media screen and (min-width: 713px){ .card-services > .subtitle-03{ min-height: 120px; } }
 
 @media screen and (min-width: 992px){
   .container-section-02{ display: flex; gap: 5px; }
-  .card-benefits{ width: 100%; margin: 0; max-width: 350px; }
-  .card-benefits > .subtitle-03{ min-height: 180px; }
+  .card-services{ width: 100%; margin: 0; max-width: 350px; }
+  .card-services > .subtitle-03{ min-height: 180px; }
 }
 
-@media screen and (min-width: 1230px){ .card-benefits > .subtitle-03{ min-height: 150px; } }
+@media screen and (min-width: 1230px){ .card-services > .subtitle-03{ min-height: 150px; } }
 
 /* SECTION 03 | ABOUT */
 .section-03{

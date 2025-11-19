@@ -747,7 +747,7 @@ html {
     .container-section-03 > .container-img > img{ max-width: 700px; }
 }
 
-/* SECTION 04 | SERVICES (Áreas de Atuação) */
+/* SECTION 04 | AREAS OF EXPERTISE */
 .section-04{
     width: 100%;
     border: var(--border-section);
@@ -774,10 +774,12 @@ html {
     color: var(--primary-color-3); /* Cor do texto */
 }
 
+/* Regra específica para os ícones dentro dos cards da Section 04 */
 .card-area-of-expertise > img{
-    width: 70px; /* Tamanho específico para ícones de áreas de atuação. Ajustado de 80px */
-    height: 70px; /* Adicionado height para manter proporção */
-    max-width: none; /* Remover max-width: 80px para controle direto */
+    width: 70px !important; /* Força o tamanho para 70px */
+    height: 70px !important; /* Força o tamanho para 70px e mantém proporção */
+    max-width: 70px !important; /* Garante que não ultrapasse 70px */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
     margin-bottom: 15px;
 }
 .card-area-of-expertise > .title-03{ max-width: 350px; }
